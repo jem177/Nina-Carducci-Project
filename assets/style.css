@@ -82,6 +82,7 @@ body {
 .about-me__introduction {
   font-family: "Spectral";
   font-weight: 800;
+  font-size: 16px;
   font-style: italic;
   width: 60%;
 }
@@ -103,7 +104,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #5e5a26;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -149,6 +150,7 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: 40px;
 }
 .quote__author {
   font-family: Spectral;
@@ -213,6 +215,9 @@ body {
 }
 .form-container {
   flex: 2;
+}
+.form-container__title {
+  font-size: 30px;
 }
 form {
   display: flex;
