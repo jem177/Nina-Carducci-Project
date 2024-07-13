@@ -67,16 +67,35 @@
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
     <!-- JSON-LD Schema.org -->
-    <script type="application/ld+json" defer>
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
+        "@type": "LocalBusiness",
         "name": "Nina Carducci",
-        "jobTitle": "Photographe",
-        "url": "https://ninacarducci.github.io/",
-        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"],
         "image": "https://ninacarducci.github.io/assets/images/nina.webp",
-        "description": "Nina Carducci, photographe professionnelle. Capturer vos moments précieux à travers des photos artistiques et émotionnelles."
+        "telephone": "05 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "http://schema.org/Monday",
+            "http://schema.org/Tuesday",
+            "http://schema.org/Wednesday",
+            "http://schema.org/Thursday",
+            "http://schema.org/Friday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"],
+        "description": "Nina Carducci, photographe professionnelle. Capturer vos moments précieux à travers des photos artistiques et émotionnelles.",
+        "url": "https://ninacarducci.github.io/"
       }
     </script>
   </head>
