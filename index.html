@@ -306,12 +306,7 @@
       <section id="services" itemscope itemtype="https://schema.org/Service">
         <h3 class="title">Mes services</h3>
         <div class="container">
-          <div
-            class="service"
-            itemprop="makesOffer"
-            itemscope
-            itemtype="https://schema.org/Offer"
-          >
+          <div class="service" itemscope itemtype="https://schema.org/Offer">
             <div class="service__description">
               <h3 itemprop="name">Shooting photo</h3>
               <p itemprop="description">
@@ -325,12 +320,7 @@
               <span>Matériel, déplacement inclus</span>
             </div>
           </div>
-          <div
-            class="service"
-            itemprop="makesOffer"
-            itemscope
-            itemtype="https://schema.org/Offer"
-          >
+          <div class="service" itemscope itemtype="https://schema.org/Offer">
             <div class="service__description">
               <h3 itemprop="name">Retouches</h3>
               <p itemprop="description">
@@ -344,12 +334,7 @@
               <span>2 AR par photo</span>
             </div>
           </div>
-          <div
-            class="service"
-            itemprop="makesOffer"
-            itemscope
-            itemtype="https://schema.org/Offer"
-          >
+          <div class="service" itemscope itemtype="https://schema.org/Offer">
             <div class="service__description">
               <h3 itemprop="name">Album photos</h3>
               <p itemprop="description">
@@ -406,7 +391,6 @@
             </form>
             <div
               class="contact-details"
-              itemprop="address"
               itemscope
               itemtype="https://schema.org/PostalAddress"
             >
@@ -420,12 +404,29 @@
                 <strong>Téléphone :</strong>
                 <span itemprop="telephone">05 56 67 78 89</span>
               </p>
-              <p>
-                <strong>Horaires :</strong>
-                <span itemprop="openingHours"
-                  >Lundi - Vendredi : 10h - 19h</span
-                >
-              </p>
+              <div
+                itemscope
+                itemtype="https://schema.org/OpeningHoursSpecification"
+              >
+                <p>
+                  <strong>Horaires :</strong>
+                  <span
+                    itemprop="dayOfWeek"
+                    itemscope
+                    itemtype="https://schema.org/DayOfWeek"
+                    >Lundi</span
+                  >
+                  -
+                  <span
+                    itemprop="dayOfWeek"
+                    itemscope
+                    itemtype="https://schema.org/DayOfWeek"
+                    >Vendredi</span
+                  >
+                  : <span itemprop="opens">10:00</span> -
+                  <span itemprop="closes">19:00</span>
+                </p>
+              </div>
             </div>
           </div>
           <aside class="picture right">
